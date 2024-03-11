@@ -1,0 +1,19 @@
+table th,td{
+    border: 1px solid black;
+}
+
+input{
+    width: 97%;
+    border-radius:1px;
+    border-color:transparent;
+    background-color: transparent;
+}
+select{
+    border-color:transparent;
+    background: transparent;
+  -webkit-appearance: none; 
+}
+ option{
+    font-style: italic;
+list-style-type: none;
+}

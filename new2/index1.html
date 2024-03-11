@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convert to PDF</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Your webpage content here -->
+    <h1>My Webpage</h1>
+    <p>This is a sample webpage content.</p>
+
+    <!-- Button to trigger PDF download -->
+    <button id="downloadPdf">Download PDF</button>
+
+    <script>
+        // Function to convert webpage to PDF and download
+        document.getElementById('downloadPdf').addEventListener('click', function () {
+            const pdf = new jsPDF();
+            pdf.text(20, 20, 'My Webpage');
+            pdf.text(20, 30, 'This is a sample webpage content.');
+            pdf.save('webpage.pdf');
+        });
+    </script>
+
+
+      <div class="pan-card">
+        <!-- Your PAN card content here -->
+    </div>
+
+    <!-- Print button -->
+    <button onclick="printPanCard()">Print PAN Card</button>
+
+    <script>
+        // Function to print the PAN card
+        function printPanCard() {
+            window.print();
+        }
+    </script>
+
+<div class="pan-card">
+    <!-- Your PAN card content here -->
+</div>
+
+<!-- Download PDF button -->
+<button onclick="downloadPdf()">Download PAN Card PDF</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<script>
+    // Function to download the page as PDF
+    function downloadPdf() {
+        const element = document.querySelector('.pan-card'); // Select the element you want to convert to PDF
+        html2pdf()
+            .set({
+                margin: 1,
+                filename: 'pan_card.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            })
+            .from(element)
+            .save();
+    }
+</script>
+</body>
+</html>
