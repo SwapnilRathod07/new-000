@@ -6,7 +6,7 @@
     <title>Document</title>
 <link rel="stylesheet" href="style.css"></head>
 <body>
-  
+  <main class="print">
         <table style="width: 100%;">
           <tr > 
             <th colspan="3"">
@@ -87,7 +87,7 @@
           <tr></tr>
           </table>
 
-           
+           </main>
           
   
 
@@ -99,7 +99,30 @@
 
 
 
-
+          <div class="pan-card">
+            <!-- Your PAN card content here -->
+        </div>
+        
+        <!-- Download PDF button -->
+        <button onclick="downloadPdf()">Download PAN Card PDF</button>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+        <script>
+            // Function to download the page as PDF
+            function downloadPdf() {
+                const element = document.querySelector('.print'); // Select the element you want to convert to PDF
+                html2pdf()
+                    .set({
+                        margin:0,
+                        filename: 'payslip.pdf',
+                        image: { type: 'jpeg', quality:98 },
+                        html2canvas: { scale:4},
+                        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+                    })
+                    .from(element)
+                    .save();
+            }
+        </script>
    <script src="script.js"></script>
 </body>
 </html>
