@@ -1,12 +1,6 @@
 
 var data = [
-"Apple",
-"Banana",
-"Orange",
-"Mango",
-"Pineapple",
-"Grapes",
-"Watermelon",
+
 "HDFC BANK LTD  A",
 "AGRICO ORGANICS LIMITED  B",
 "AJANTA SOYA LIMITED TRANSFER  B",
@@ -8801,6 +8795,7 @@ var data = [
 "SHRIRAM FINANCE LIMITED  A",
 
 ];
+
 function search() {
 var keyword = document.getElementById('searchInput').value.toLowerCase();
 var resultsDiv = document.getElementById('results');
