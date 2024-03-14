@@ -10,10 +10,9 @@
         <table style="width: 100%;">
           <tr > 
             <th colspan="3"">
-              <input type="text"  placeholder="name"><br>
-              <input type="text" placeholder="xyz whatever you want hear type "><br>
-              <input type="text" placeholder="CYBER TECH X (ctx)"><br>  
-              <input type="text" placeholder="HEAR YOUR ADDRESS AND PIN CODE ">        
+              <input type="text"  placeholder="Company name" style="font-size: large;"><br>
+              
+              <input type="text" placeholder="Address">        
             </th>
 
 
@@ -22,14 +21,14 @@
           
           <tr>
             <td>Employee Number	</td>
-            <td><input type="text" placeholder="Employee Number"></td>
+            <td><input type="text" placeholder="EMP N"></td>
             <td>Bank Name	</td>
             <td><input type="text" placeholder="Bank Name"></td>
         </tr>
         
         <tr>
             <td>Empoloyee Name	</td>
-            <td><input type="text" placeholder="Empoloyee Name"></td>
+            <td><input type="text" placeholder="EMP Name"></td>
             <td>Account Number	</td>
             <td><input type="text" placeholder="Account Number"></td>
         </tr>
@@ -46,10 +45,8 @@
 
 
           <tr><td>Gander</td>
-            <td><select >
-              <option value="">select gender</option> 
-                <option value="">MIAL</option>
-                <option value="">FEMAIL</option>
+            <td><input type="text" placeholder="MAIL/FEMAIL">
+               
             </select></td>
             <td>		Pan Number	</td>
             <td><input type="text" placeholder="Pan Number"></td>
@@ -72,12 +69,12 @@
                 </tr>
       
                 <tr><td>Total Earnings		</td>
-                <td id="texth" > </td>
+                <td id="texth"  style="font-weight: bold; " >0 </td>
                 <td>Total Deductions</td>
-                <td id="total">  </td></tr>
+                <td id="total"  style="font-weight: bold;  "  >  </td></tr>
                
                 <tr><td>Net Amount</td>
-                  <td colspan="3" id="result"><input type="number" placeholder="Amount"></td>
+                  <td colspan="3" id="result"><input type="number" placeholder="Amount" style="font-size: 15px;"></td>
                   
                   </tr>
         
@@ -102,9 +99,11 @@
           <div class="pan-card">
             <!-- Your PAN card content here -->
         </div>
-        
+        <br>
         <!-- Download PDF button -->
-        <button onclick="downloadPdf()">Download PAN Card PDF</button>
+       
+  <button class="button-55" role="button">Download</button>
+        
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
         <script>
