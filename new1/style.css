@@ -3,6 +3,7 @@ table th,td{
 }
 
 input{
+    padding: 0px;
     width: 97%;
     border-radius:1px;
     border-color:transparent;
