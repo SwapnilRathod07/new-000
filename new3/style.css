@@ -4,31 +4,26 @@
   background: linear-gradient(-67deg, rgba(200, 216, 231, 0.7), rgba(255, 255, 255, 0.8));
   overflow: hidden;
   box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6), 2px 2px 12px rgba(200, 216, 231, 1);
-  width: 90%;
+
   /* Default width for most devices */
   max-width: 380px;
   /* Limit the maximum width */
   margin: 0 auto;
   /* Center the card horizontally */
+  position: sticky;
+  bottom: 85%;
+  padding: 1px;
+  width: 380px;
+
+
+
 }
 
 .results {
-  overflow: auto;
-  max-height: 200px;
   padding: 1%;
-  border-radius: var(--border-radius);
-  background: linear-gradient(-67deg, rgba(200, 216, 231, 0.7), rgba(255, 255, 255, 0.8));
-  overflow: hidden;
-  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6), 2px 2px 12px rgba(200, 216, 231, 1);
-  width: 90%;
-  /* Default width for most devices */
-  max-width: 380px;
-  /* Limit the maximum width */
-  margin: 0 auto;
-  /* Center the card horizontally */
-  padding: 16px 16px;
-  background-color: #e2e9f4;
-  border-radius: var(--border-radius);
+  overflow-y: scroll;
+  max-height: 500px;
+  margin: 10px 0px 0px 0px;
 }
 
 /* Media queries for different screen sizes */
@@ -44,25 +39,12 @@
 
   /* For laptops and larger devices */
   .Card {
-    width: 60%;
+    width: 100%;
   }
 }
 
-@media only screen and (min-width: 1200px) {
 
-  /* For desktops and larger devices */
-  .Card {
-    width: 50%;
-  }
-}
 
-@media only screen and (min-width: 1920px) {
-
-  /* For larger screens such as projectors */
-  .Card {
-    width: 40%;
-  }
-}
 
 
 
@@ -90,14 +72,7 @@ html {
 
 }
 
-.Card {
-  padding: 1px;
-  border-radius: var(--border-radius);
-  background: linear-gradient(-67deg, rgba(200, 216, 231, 0.7), rgba(255, 255, 255, 0.8));
-  overflow: hidden;
-  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6), 2px 2px 12px rgba(200, 216, 231, 1);
-  width: 380px;
-}
+
 
 .CardInner {
   padding: 16px 16px;
