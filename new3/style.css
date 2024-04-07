@@ -1,3 +1,73 @@
+.Card {
+  padding: 1%;
+  border-radius: var(--border-radius);
+  background: linear-gradient(-67deg, rgba(200, 216, 231, 0.7), rgba(255, 255, 255, 0.8));
+  overflow: hidden;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6), 2px 2px 12px rgba(200, 216, 231, 1);
+  width: 90%;
+  /* Default width for most devices */
+  max-width: 380px;
+  /* Limit the maximum width */
+  margin: 0 auto;
+  /* Center the card horizontally */
+}
+
+.results {
+  overflow: auto;
+  max-height: 200px;
+  padding: 1%;
+  border-radius: var(--border-radius);
+  background: linear-gradient(-67deg, rgba(200, 216, 231, 0.7), rgba(255, 255, 255, 0.8));
+  overflow: hidden;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6), 2px 2px 12px rgba(200, 216, 231, 1);
+  width: 90%;
+  /* Default width for most devices */
+  max-width: 380px;
+  /* Limit the maximum width */
+  margin: 0 auto;
+  /* Center the card horizontally */
+  padding: 16px 16px;
+  background-color: #e2e9f4;
+  border-radius: var(--border-radius);
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (min-width: 768px) {
+
+  /* For tablets and larger devices */
+  .Card {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  /* For laptops and larger devices */
+  .Card {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  /* For desktops and larger devices */
+  .Card {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+
+  /* For larger screens such as projectors */
+  .Card {
+    width: 40%;
+  }
+}
+
+
+
+
+
 @import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Hind&display=swap");
 
@@ -17,6 +87,7 @@ html {
   height: 100%;
   grid-template: 1fr/100%;
   place-items: center;
+
 }
 
 .Card {
@@ -46,7 +117,8 @@ html {
   justify-content: center;
   border-radius: var(--border-radius);
   margin-right: 12px;
-  box-shadow:  -2px -2px 6px rgba(255, 255, 255, 0.6), 2px 2px 12px rgba(200, 216, 231, 1);
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6), 2px 2px 12px rgba(200, 216, 231, 1);
+
   svg {
     transform: translate(-1px, -1px);
   }
