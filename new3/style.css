@@ -26,22 +26,9 @@
   margin: 10px 0px 0px 0px;
 }
 
-/* Media queries for different screen sizes */
-@media only screen and (min-width: 768px) {
 
-  /* For tablets and larger devices */
-  .Card {
-    width: 70%;
-  }
-}
 
-@media only screen and (min-width: 992px) {
 
-  /* For laptops and larger devices */
-  .Card {
-    width: 100%;
-  }
-}
 
 
 
